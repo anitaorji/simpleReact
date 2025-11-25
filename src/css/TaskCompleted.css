@@ -1,0 +1,27 @@
+.task-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    background-color: #fff;
+    justify-items: center;
+    
+}
+.task-list li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task-list li.completed::before{
+    content: '✔️';
+    color: green;
+}
+.task-list li.pending::before{
+    content: '⏳';
+    color: orange;
+}
+.task-list li.failed::before{
+    content: '❌';
+    color: red;
+}
